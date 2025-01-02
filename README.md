@@ -1,77 +1,125 @@
 # Movie App
-A full-stack web application built with React, Vite, and Firebase, allowing users to browse and search for movies and TV shows, and manage their watchlist.
+## Overview
+
+The Movie App is a full-stack web application built with React, Vite, and Firebase. It allows users to browse and search for movies and TV shows, view details, and add items to their watchlist.
+
+## Features and Benefits
+
+*   Browse and search for movies and TV shows
+*   View details, including cast, videos, and user ratings
+*   Add items to a personalized watchlist
+*   User authentication with Google Sign-In
+*   Responsive design for a seamless user experience across devices
+
+## Target Audience
+
+The Movie App is designed for film enthusiasts and casual viewers alike, providing an easy-to-use platform for discovering and exploring movies and TV shows.
+
+## Technology Highlights
+
+*   Frontend: React, Vite, Chakra UI
+*   Backend: Firebase Realtime Database, Firebase Authentication
+*   APIs: The Movie Database (TMDb) API
 
 ## Table of Contents
-- [Description](#description)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Description
-The Movie App is a user-friendly application that enables users to:
-- Browse trending movies and TV shows
-- Search for movies and TV shows by title
-- View detailed information about each movie or TV show
-- Add movies and TV shows to their watchlist
-- Remove movies and TV shows from their watchlist
+*   [About](#about)
+*   [Features](#features)
+*   [Technology Stack](#technology-stack)
+*   [Prerequisites](#prerequisites)
+*   [Installation](#installation)
+*   [Usage](#usage)
+*   [API Documentation](#api-documentation)
+*   [Deployment](#deployment)
+*   [Contributing](#contributing)
+*   [License](#license)
+*   [Contact](#contact)
 
-## Features
-- User authentication with Google
-- Browse trending movies and TV shows
-- Search for movies and TV shows by title
-- View detailed information about each movie or TV show
-- Add movies and TV shows to their watchlist
-- Remove movies and TV shows from their watchlist
-- Responsive design for mobile and desktop devices
+## Features and Functionality
+
+*   **Browse and Search**: Browse trending movies and TV shows, or search for specific titles
+*   **Details**: View detailed information about movies and TV shows, including cast, videos, and user ratings
+*   **Watchlist**: Add items to a personalized watchlist for easy access
+*   **User Authentication**: Sign in with Google to access watchlist and other features
+
+## Technology Stack
+
+### Backend
+
+*   **Firebase Realtime Database**: NoSQL database for storing user data and watchlists
+*   **Firebase Authentication**: User authentication with Google Sign-In
+
+### Frontend
+
+*   **React**: JavaScript library for building user interfaces
+*   **Vite**: Development server and build tool
+*   **Chakra UI**: UI component library
+
+### APIs
+
+*   **The Movie Database (TMDb) API**: API for retrieving movie and TV show data
+
+## Prerequisites
+
+*   Node.js (version 14 or higher)
+*   npm (version 6 or higher) or pnpm (version 6 or higher)
 
 ## Installation
-To install the Movie App, follow these steps:
-1. Clone the repository: `git clone https://github.com/bimapopo345/Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev.git`
-2. Change into the project directory: `cd Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev`
-3. Install the dependencies: `npm install`
-4. Create a `.env` file in the root directory and add the following environment variables:
-   - `VITE_API_KEY`: Your TMDB API key
-   - `VITE_FIREBASE_API_KEY`: Your Firebase API key
-   - `VITE_FIREBASE_AUTH_DOMAIN`: Your Firebase authentication domain
-   - `VITE_FIREBASE_PROJECT_ID`: Your Firebase project ID
-   - `VITE_FIREBASE_STORAGE_BUCKET`: Your Firebase storage bucket
-   - `VITE_FIREBASE_MESSAGING_SENDER_ID`: Your Firebase messaging sender ID
-   - `VITE_FIREBASE_APP_ID`: Your Firebase app ID
-5. Start the application: `npm run dev`
+
+1.  Clone the repository: `git clone https://github.com/bimapopo345/bimapopo345-Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev.git`
+2.  Install dependencies:
+    ```bash
+npm install
+```
+    or
+    ```bash
+pnpm install
+```
+3.  Create a `.env` file in the root directory with the following environment variables:
+    *   `VITE_API_KEY`: TMDb API key
+    *   `VITE_FIREBASE_API_KEY`: Firebase API key
+    *   `VITE_FIREBASE_AUTH_DOMAIN`: Firebase authentication domain
+    *   `VITE_FIREBASE_PROJECT_ID`: Firebase project ID
+    *   `VITE_FIREBASE_STORAGE_BUCKET`: Firebase storage bucket
+    *   `VITE_FIREBASE_MESSAGING_SENDER_ID`: Firebase messaging sender ID
+    *   `VITE_FIREBASE_APP_ID`: Firebase app ID
 
 ## Usage
-To use the Movie App, follow these steps:
-1. Open the application in your web browser: `http://localhost:5173`
-2. Browse trending movies and TV shows on the home page
-3. Search for movies and TV shows by title using the search bar
-4. View detailed information about each movie or TV show by clicking on its card
-5. Add movies and TV shows to your watchlist by clicking the "Add to watchlist" button
-6. Remove movies and TV shows from your watchlist by clicking the "Remove from watchlist" button
+
+1.  Start the development server:
+    ```bash
+npm run dev
+```
+    or
+    ```bash
+pnpm run dev
+```
+2.  Open the app in a web browser: `http://localhost:3000`
 
 ## API Documentation
-The Movie App uses the TMDB API to fetch data about movies and TV shows. You can find the API documentation [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
-## Dependencies
-The Movie App depends on the following libraries and frameworks:
-- React
-- Vite
-- Firebase
-- TMDB API
-- Chakra UI
-- Axios
+The Movie App uses the TMDb API to retrieve movie and TV show data. Refer to the [TMDb API documentation](https://developers.themoviedb.org/3/getting-started/introduction) for more information.
+
+## Deployment
+
+To deploy the app, run the following command:
+```bash
+npm run build
+```
+or
+```bash
+pnpm run build
+```
+This will create a production-ready build in the `dist` directory.
 
 ## Contributing
-To contribute to the Movie App, follow these steps:
-1. Fork the repository: `git fork https://github.com/bimapopo345/Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev.git`
-2. Create a new branch: `git branch feature/new-feature`
-3. Make changes to the code
-4. Commit the changes: `git commit -m "New feature: <feature name>"`
-5. Push the changes to your fork: `git push origin feature/new-feature`
-6. Create a pull request to merge the changes into the main repository
+
+Contributions are welcome! To contribute, please fork the repository and submit a pull request with your changes.
 
 ## License
-The Movie App is licensed under the MIT License. You can find the license [here](https://github.com/bimapopo345/Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev/blob/main/LICENSE).
+
+The Movie App is licensed under the MIT License.
+
+## Contact
+
+For questions or issues, please contact the maintainer at [bimapopo345@gmail.com](mailto:bimapopo345@gmail.com).
