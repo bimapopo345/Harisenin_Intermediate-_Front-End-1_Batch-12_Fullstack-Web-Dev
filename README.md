@@ -1,54 +1,42 @@
 # Movie App
-
-Movie App is a Fullstack web application that allows users to browse movies and TV shows, view details, and add items to their watchlist. The app utilizes The Movie Database (TMDb) API for fetching data and Firebase for authentication and storing user watchlists.
+A full-stack web application for discovering and managing movies and TV shows.
 
 ## About
-
-The Movie App is built using React, with a custom UI theme designed using Chakra UI. It features a responsive design, allowing for a seamless user experience across various devices. The app's core functionality includes:
-
-* Browsing trending movies and TV shows
-* Viewing detailed information about each item, including cast, videos, and user ratings
-* Adding items to a personal watchlist
-* Authentication using Google Sign-In
+Movie App is a web application built using React, Vite, and Firebase. It allows users to discover new movies and TV shows, view details, and manage their watchlist. The application uses The Movie Database (TMDb) API for fetching data and Firebase for authentication and data storage.
 
 ## Features
-
-* **Trending Page**: Displays a list of trending movies and TV shows, with the option to filter by time window (day or week)
-* **Details Page**: Provides detailed information about a specific movie or TV show, including cast, videos, and user ratings
-* **Watchlist Page**: Allows users to view and manage their personal watchlist, with the option to add or remove items
-* **Search Functionality**: Enables users to search for specific movies or TV shows
-* **Authentication**: Users can log in using Google Sign-In, and their watchlist is stored in Firebase
+* Discover trending movies and TV shows
+* View details of movies and TV shows
+* Manage watchlist
+* Search for movies and TV shows
+* Authentication using Google
 
 ## Technology Stack
-
 ### Backend
-
-* **Firebase**: Used for authentication and storing user watchlists
-* **TMDb API**: Utilized for fetching movie and TV show data
+* Firebase Authentication
+* Firebase Firestore
 
 ### Frontend
-
-* **React**: JavaScript library used for building the user interface
-* **Chakra UI**: Custom UI theme designed using Chakra UI
-* **Vite**: Development server and build tool
+* React
+* Vite
+* Chakra UI
 
 ### Other Tools
-
-* **Axios**: Used for making API requests to TMDb API
-* **Firebase SDK**: Used for interacting with Firebase services
+* The Movie Database (TMDb) API
 
 ## Prerequisites
-
-* **Node.js**: Installed on your system
-* **npm** or **pnpm**: Package manager installed on your system
-* **Vite**: Installed globally on your system (`npm install -g vite` or `pnpm install -g vite`)
+* Node.js (14 or higher)
+* npm (6 or higher)
+* Vite (3 or higher)
+* Firebase account
 
 ## Installation
-
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd movie-app
+git clone https://github.com/bimapopo345/Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev.git
+
+# Change into the project directory
+cd Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev
 
 # Install dependencies
 npm install
@@ -64,46 +52,43 @@ npm run dev
 pnpm dev
 ```
 
-## Usage Guide
-
-1. Start the development server using `npm run dev` or `pnpm dev`.
-2. Open your web browser and navigate to `http://localhost:3000`.
-3. Browse the trending page, search for movies or TV shows, and view details.
-4. Log in using Google Sign-In to access your personal watchlist.
-5. Add or remove items from your watchlist.
-
-## API Documentation
-
-The Movie App uses the TMDb API for fetching data. You can find the API documentation [here](https://developers.themoviedb.org/3/getting-started/introduction).
-
-## Deployment Instructions
-
-To deploy the Movie App, you can use a service like Vercel or Netlify. Here's an example of how to deploy using Vercel:
-
-```bash
-# Create a Vercel account and install the Vercel CLI
-npm install -g vercel
-
-# Link your Vercel account to your project
-vercel login
-
-# Deploy your project
-vercel
+## Environment Variables
+```env
+VITE_API_KEY=your_tmdb_api_key
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_firebase_app_id
 ```
 
+## Usage Guide
+1. Start the development server using `npm run dev` or `pnpm dev`.
+2. Open the application in a web browser at `http://localhost:5173`.
+3. Discover trending movies and TV shows on the homepage.
+4. View details of movies and TV shows by clicking on the cards.
+5. Manage your watchlist by adding or removing movies and TV shows.
+6. Search for movies and TV shows using the search bar.
+
+## API Documentation
+The Movie Database (TMDb) API is used for fetching data. Please refer to the [TMDb API documentation](https://developers.themoviedb.org/3) for more information.
+
+## Deployment Instructions
+To deploy the application, follow these steps:
+1. Build the application using `npm run build` or `pnpm build`.
+2. Deploy the built application to a hosting platform such as Vercel or Netlify.
+3. Configure the environment variables on the hosting platform.
+
 ## Contributing Guidelines
-
-To contribute to the Movie App, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Make your changes and commit them.
-4. Open a pull request against the main branch.
+To contribute to the project, follow these steps:
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix.
+3. Make changes to the code and commit them.
+4. Open a pull request on GitHub.
 
 ## License
-
-The Movie App is licensed under the MIT License.
+The project is licensed under the MIT License.
 
 ## Contact/Support Information
-
-If you have any questions or need support, please contact the maintainers at [insert contact email or link to support page].
+For any questions or issues, please contact the maintainer at [bimapopo345@gmail.com](mailto:bimapopo345@gmail.com).
