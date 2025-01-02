@@ -1,125 +1,109 @@
 # Movie App
-## Overview
 
-The Movie App is a full-stack web application built with React, Vite, and Firebase. It allows users to browse and search for movies and TV shows, view details, and add items to their watchlist.
+Movie App is a Fullstack web application that allows users to browse movies and TV shows, view details, and add items to their watchlist. The app utilizes The Movie Database (TMDb) API for fetching data and Firebase for authentication and storing user watchlists.
 
-## Features and Benefits
+## About
 
-*   Browse and search for movies and TV shows
-*   View details, including cast, videos, and user ratings
-*   Add items to a personalized watchlist
-*   User authentication with Google Sign-In
-*   Responsive design for a seamless user experience across devices
+The Movie App is built using React, with a custom UI theme designed using Chakra UI. It features a responsive design, allowing for a seamless user experience across various devices. The app's core functionality includes:
 
-## Target Audience
+* Browsing trending movies and TV shows
+* Viewing detailed information about each item, including cast, videos, and user ratings
+* Adding items to a personal watchlist
+* Authentication using Google Sign-In
 
-The Movie App is designed for film enthusiasts and casual viewers alike, providing an easy-to-use platform for discovering and exploring movies and TV shows.
+## Features
 
-## Technology Highlights
-
-*   Frontend: React, Vite, Chakra UI
-*   Backend: Firebase Realtime Database, Firebase Authentication
-*   APIs: The Movie Database (TMDb) API
-
-## Table of Contents
-
-*   [About](#about)
-*   [Features](#features)
-*   [Technology Stack](#technology-stack)
-*   [Prerequisites](#prerequisites)
-*   [Installation](#installation)
-*   [Usage](#usage)
-*   [API Documentation](#api-documentation)
-*   [Deployment](#deployment)
-*   [Contributing](#contributing)
-*   [License](#license)
-*   [Contact](#contact)
-
-## Features and Functionality
-
-*   **Browse and Search**: Browse trending movies and TV shows, or search for specific titles
-*   **Details**: View detailed information about movies and TV shows, including cast, videos, and user ratings
-*   **Watchlist**: Add items to a personalized watchlist for easy access
-*   **User Authentication**: Sign in with Google to access watchlist and other features
+* **Trending Page**: Displays a list of trending movies and TV shows, with the option to filter by time window (day or week)
+* **Details Page**: Provides detailed information about a specific movie or TV show, including cast, videos, and user ratings
+* **Watchlist Page**: Allows users to view and manage their personal watchlist, with the option to add or remove items
+* **Search Functionality**: Enables users to search for specific movies or TV shows
+* **Authentication**: Users can log in using Google Sign-In, and their watchlist is stored in Firebase
 
 ## Technology Stack
 
 ### Backend
 
-*   **Firebase Realtime Database**: NoSQL database for storing user data and watchlists
-*   **Firebase Authentication**: User authentication with Google Sign-In
+* **Firebase**: Used for authentication and storing user watchlists
+* **TMDb API**: Utilized for fetching movie and TV show data
 
 ### Frontend
 
-*   **React**: JavaScript library for building user interfaces
-*   **Vite**: Development server and build tool
-*   **Chakra UI**: UI component library
+* **React**: JavaScript library used for building the user interface
+* **Chakra UI**: Custom UI theme designed using Chakra UI
+* **Vite**: Development server and build tool
 
-### APIs
+### Other Tools
 
-*   **The Movie Database (TMDb) API**: API for retrieving movie and TV show data
+* **Axios**: Used for making API requests to TMDb API
+* **Firebase SDK**: Used for interacting with Firebase services
 
 ## Prerequisites
 
-*   Node.js (version 14 or higher)
-*   npm (version 6 or higher) or pnpm (version 6 or higher)
+* **Node.js**: Installed on your system
+* **npm** or **pnpm**: Package manager installed on your system
+* **Vite**: Installed globally on your system (`npm install -g vite` or `pnpm install -g vite`)
 
 ## Installation
 
-1.  Clone the repository: `git clone https://github.com/bimapopo345/bimapopo345-Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev.git`
-2.  Install dependencies:
-    ```bash
+```bash
+# Clone the repository
+git clone <repository-url>
+cd movie-app
+
+# Install dependencies
 npm install
-```
-    or
-    ```bash
+# or using pnpm
 pnpm install
-```
-3.  Create a `.env` file in the root directory with the following environment variables:
-    *   `VITE_API_KEY`: TMDb API key
-    *   `VITE_FIREBASE_API_KEY`: Firebase API key
-    *   `VITE_FIREBASE_AUTH_DOMAIN`: Firebase authentication domain
-    *   `VITE_FIREBASE_PROJECT_ID`: Firebase project ID
-    *   `VITE_FIREBASE_STORAGE_BUCKET`: Firebase storage bucket
-    *   `VITE_FIREBASE_MESSAGING_SENDER_ID`: Firebase messaging sender ID
-    *   `VITE_FIREBASE_APP_ID`: Firebase app ID
 
-## Usage
+# Set up environment variables
+cp .env.example .env
 
-1.  Start the development server:
-    ```bash
+# Start development server
 npm run dev
+# or using pnpm
+pnpm dev
 ```
-    or
-    ```bash
-pnpm run dev
-```
-2.  Open the app in a web browser: `http://localhost:3000`
+
+## Usage Guide
+
+1. Start the development server using `npm run dev` or `pnpm dev`.
+2. Open your web browser and navigate to `http://localhost:3000`.
+3. Browse the trending page, search for movies or TV shows, and view details.
+4. Log in using Google Sign-In to access your personal watchlist.
+5. Add or remove items from your watchlist.
 
 ## API Documentation
 
-The Movie App uses the TMDb API to retrieve movie and TV show data. Refer to the [TMDb API documentation](https://developers.themoviedb.org/3/getting-started/introduction) for more information.
+The Movie App uses the TMDb API for fetching data. You can find the API documentation [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
-## Deployment
+## Deployment Instructions
 
-To deploy the app, run the following command:
+To deploy the Movie App, you can use a service like Vercel or Netlify. Here's an example of how to deploy using Vercel:
+
 ```bash
-npm run build
-```
-or
-```bash
-pnpm run build
-```
-This will create a production-ready build in the `dist` directory.
+# Create a Vercel account and install the Vercel CLI
+npm install -g vercel
 
-## Contributing
+# Link your Vercel account to your project
+vercel login
 
-Contributions are welcome! To contribute, please fork the repository and submit a pull request with your changes.
+# Deploy your project
+vercel
+```
+
+## Contributing Guidelines
+
+To contribute to the Movie App, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Open a pull request against the main branch.
 
 ## License
 
 The Movie App is licensed under the MIT License.
 
-## Contact
+## Contact/Support Information
 
-For questions or issues, please contact the maintainer at [bimapopo345@gmail.com](mailto:bimapopo345@gmail.com).
+If you have any questions or need support, please contact the maintainers at [insert contact email or link to support page].
