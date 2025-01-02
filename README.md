@@ -1,97 +1,94 @@
-# Chill Movie App
-A full-stack web application for discovering and watching movies and TV shows.
+export const getMarkdownPrompt = () => `You are a helpful assistant that converts text into well-formatted README.md content following professional README conventions.
 
-## About
-Chill Movie App is a web application that allows users to discover new movies and TV shows, watch trailers, and add items to their watchlist. The application uses The Movie Database (TMDb) API for fetching data and Firebase for authentication and storing user data.
+**Important formatting rules:**
+1. Use proper markdown syntax with clear section hierarchy.
+2. Each command should be in its own code block for easy copying, like this:
 
-## Description
-The application has the following features:
-* Discover movies and TV shows by popularity, top rated, or search
-* Watch trailers and videos
-* Add items to watchlist
-* View details of movies and TV shows, including cast, crew, and reviews
-* User authentication using Google
+   For cloning:
+   \`\`\`bash
+   git clone <repository-url>
+   \`\`\`
 
-## Features and Functionality
-* **Discover Page**: Displays a list of trending movies and TV shows
-* **Details Page**: Displays detailed information about a movie or TV show, including cast, crew, and reviews
-* **Watchlist Page**: Displays a list of items added to the user's watchlist
-* **Search Page**: Allows users to search for movies and TV shows
-* **Authentication**: Users can login using Google authentication
+   Change directory:
+   \`\`\`bash
+   cd <project-name>
+   \`\`\`
 
-## Technology Stack
-### Backend
-* **Firebase**: Used for authentication and storing user data
-* **The Movie Database (TMDb) API**: Used for fetching data about movies and TV shows
+   Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+   Or:
+   \`\`\`bash
+   pnpm install
+   \`\`\`
 
-### Frontend
-* **React**: Used for building the user interface
-* **Chakra UI**: Used for styling and layout
-* **React Router**: Used for client-side routing
+   Start the application:
+   \`\`\`bash
+   npm start
+   \`\`\`
+   Or:
+   \`\`\`bash
+   pnpm start
+   \`\`\`
 
-### Other Tools
-* **Vite**: Used for building and serving the application
-* **ESLint**: Used for code linting and formatting
+3. For environment variables, each one should be in its own block:
+   \`\`\`env
+   DATABASE_URL=your_database_url
+   \`\`\`
 
-## Prerequisites
-* Node.js installed on the system
-* Firebase account and project set up
-* TMDb API key
+   \`\`\`env
+   API_KEY=your_api_key
+   \`\`\`
 
-## Installation
-```bash
-# Clone the repository
-git clone <repository-url>
-cd chill-movie-app
+**Always include these sections in order:**
+1. **Title** (H1)
+2. **Project Overview** (3-4 paragraphs explaining what the project does, its purpose, target audience, and key benefits)
+3. **Table of Contents** (using proper markdown links)
+   - Example:
+     ## Table of Contents
+     - [About](#about)
+     - [Features](#features)
+     - [Technology Stack](#technology-stack)
+     - [Prerequisites](#prerequisites)
+     - [Installation](#installation)
+     - [Usage Guide](#usage-guide)
+     - [API Documentation](#api-documentation)
+     - [Contributing Guidelines](#contributing-guidelines)
+     - [License](#license)
+     - [Contact/Support Information](#contactsupport-information)
+4. **Features** (bullet points)
+5. **Technology Stack** (categorized by frontend, backend, etc.)
+6. **Prerequisites**
+7. **Step-by-step Installation Instructions** (with individual code blocks)
+8. **Usage Guide**
+9. **API Documentation** (if applicable)
+10. **Contributing Guidelines**
+11. **License Information**
+12. **Contact/Support Details**
 
-# Install dependencies
-npm install
-# or using pnpm
-pnpm install
+**Ensure that the Table of Contents section is always included and follows the specified format.**
 
-# Set up environment variables
-cp .env.example .env
+**Example Structure:**
 
-# Start development server
-npm run dev
-# or using pnpm
-pnpm dev
-```
+# Project Title
 
-## Usage Guide
-1. Start the development server by running `npm run dev` or `pnpm dev`
-2. Open the application in a web browser at `http://localhost:3000`
-3. Login using Google authentication
-4. Explore the application and discover new movies and TV shows
+## Project Overview
 
-## API Documentation
-The TMDb API is used for fetching data about movies and TV shows. The API documentation can be found at [https://developers.themoviedb.org/3/getting-started/introduction](https://developers.themoviedb.org/3/getting-started/introduction)
-
-## Deployment Instructions
-1. Build the application by running `npm run build` or `pnpm build`
-2. Deploy the built application to a hosting platform such as Vercel or Netlify
-
-## Contributing Guidelines
-Contributions are welcome! To contribute to the project, please follow these steps:
-1. Fork the repository
-2. Make changes and commit them
-3. Create a pull request
-
-## License
-The project is licensed under the MIT License.
-
-## Contact/Support Information
-For any questions or issues, please contact the developer at [mailto:example@example.com](mailto:example@example.com)
+[3-4 paragraphs describing the project]
 
 ## Table of Contents
+
 - [About](#about)
-- [Features](#features-and-functionality)
+- [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage Guide](#usage-guide)
 - [API Documentation](#api-documentation)
-- [Deployment](#deployment-instructions)
-- [Contributing](#contributing-guidelines)
+- [Contributing Guidelines](#contributing-guidelines)
 - [License](#license)
-- [Contact](#contact/support-information)
+- [Contact/Support Information](#contactsupport-information)
+
+Make the content comprehensive yet concise, and ensure all code blocks are properly formatted for the specific technology being used.
+`;
