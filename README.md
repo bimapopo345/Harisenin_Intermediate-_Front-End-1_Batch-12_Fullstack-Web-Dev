@@ -1,42 +1,48 @@
-# Movie App
-A full-stack web application for discovering and managing movies and TV shows.
+# Chill Movie App
+A full-stack web application for discovering and watching movies and TV shows.
 
 ## About
-Movie App is a web application built using React, Vite, and Firebase. It allows users to discover new movies and TV shows, view details, and manage their watchlist. The application uses The Movie Database (TMDb) API for fetching data and Firebase for authentication and data storage.
+Chill Movie App is a web application that allows users to discover new movies and TV shows, watch trailers, and add items to their watchlist. The application uses The Movie Database (TMDb) API for fetching data and Firebase for authentication and storing user data.
 
-## Features
-* Discover trending movies and TV shows
-* View details of movies and TV shows
-* Manage watchlist
-* Search for movies and TV shows
-* Authentication using Google
+## Description
+The application has the following features:
+* Discover movies and TV shows by popularity, top rated, or search
+* Watch trailers and videos
+* Add items to watchlist
+* View details of movies and TV shows, including cast, crew, and reviews
+* User authentication using Google
+
+## Features and Functionality
+* **Discover Page**: Displays a list of trending movies and TV shows
+* **Details Page**: Displays detailed information about a movie or TV show, including cast, crew, and reviews
+* **Watchlist Page**: Displays a list of items added to the user's watchlist
+* **Search Page**: Allows users to search for movies and TV shows
+* **Authentication**: Users can login using Google authentication
 
 ## Technology Stack
 ### Backend
-* Firebase Authentication
-* Firebase Firestore
+* **Firebase**: Used for authentication and storing user data
+* **The Movie Database (TMDb) API**: Used for fetching data about movies and TV shows
 
 ### Frontend
-* React
-* Vite
-* Chakra UI
+* **React**: Used for building the user interface
+* **Chakra UI**: Used for styling and layout
+* **React Router**: Used for client-side routing
 
 ### Other Tools
-* The Movie Database (TMDb) API
+* **Vite**: Used for building and serving the application
+* **ESLint**: Used for code linting and formatting
 
 ## Prerequisites
-* Node.js (14 or higher)
-* npm (6 or higher)
-* Vite (3 or higher)
-* Firebase account
+* Node.js installed on the system
+* Firebase account and project set up
+* TMDb API key
 
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/bimapopo345/Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev.git
-
-# Change into the project directory
-cd Harisenin_Intermediate-_Front-End-1_Batch-12_Fullstack-Web-Dev
+git clone <repository-url>
+cd chill-movie-app
 
 # Install dependencies
 npm install
@@ -52,43 +58,40 @@ npm run dev
 pnpm dev
 ```
 
-## Environment Variables
-```env
-VITE_API_KEY=your_tmdb_api_key
-VITE_FIREBASE_API_KEY=your_firebase_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-VITE_FIREBASE_APP_ID=your_firebase_app_id
-```
-
 ## Usage Guide
-1. Start the development server using `npm run dev` or `pnpm dev`.
-2. Open the application in a web browser at `http://localhost:5173`.
-3. Discover trending movies and TV shows on the homepage.
-4. View details of movies and TV shows by clicking on the cards.
-5. Manage your watchlist by adding or removing movies and TV shows.
-6. Search for movies and TV shows using the search bar.
+1. Start the development server by running `npm run dev` or `pnpm dev`
+2. Open the application in a web browser at `http://localhost:3000`
+3. Login using Google authentication
+4. Explore the application and discover new movies and TV shows
 
 ## API Documentation
-The Movie Database (TMDb) API is used for fetching data. Please refer to the [TMDb API documentation](https://developers.themoviedb.org/3) for more information.
+The TMDb API is used for fetching data about movies and TV shows. The API documentation can be found at [https://developers.themoviedb.org/3/getting-started/introduction](https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## Deployment Instructions
-To deploy the application, follow these steps:
-1. Build the application using `npm run build` or `pnpm build`.
-2. Deploy the built application to a hosting platform such as Vercel or Netlify.
-3. Configure the environment variables on the hosting platform.
+1. Build the application by running `npm run build` or `pnpm build`
+2. Deploy the built application to a hosting platform such as Vercel or Netlify
 
 ## Contributing Guidelines
-To contribute to the project, follow these steps:
-1. Fork the repository on GitHub.
-2. Create a new branch for your feature or bug fix.
-3. Make changes to the code and commit them.
-4. Open a pull request on GitHub.
+Contributions are welcome! To contribute to the project, please follow these steps:
+1. Fork the repository
+2. Make changes and commit them
+3. Create a pull request
 
 ## License
 The project is licensed under the MIT License.
 
 ## Contact/Support Information
-For any questions or issues, please contact the maintainer at [bimapopo345@gmail.com](mailto:bimapopo345@gmail.com).
+For any questions or issues, please contact the developer at [mailto:example@example.com](mailto:example@example.com)
+
+## Table of Contents
+- [About](#about)
+- [Features](#features-and-functionality)
+- [Technology Stack](#technology-stack)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage Guide](#usage-guide)
+- [API Documentation](#api-documentation)
+- [Deployment](#deployment-instructions)
+- [Contributing](#contributing-guidelines)
+- [License](#license)
+- [Contact](#contact/support-information)
